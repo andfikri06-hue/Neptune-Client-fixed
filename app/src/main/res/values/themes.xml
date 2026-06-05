@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Theme utama app (MainActivity)
+        Dark theme, tidak ada ActionBar
+    -->
+    <style name="Theme.NeptuneClient" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/neptune_accent</item>
+        <item name="colorPrimaryVariant">@color/neptune_accent_dark</item>
+        <item name="colorOnPrimary">@color/bg_dark</item>
+        <item name="colorSecondary">@color/neptune_accent_light</item>
+        <item name="colorOnSecondary">@color/bg_dark</item>
+        <item name="android:colorBackground">@color/bg_dark</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <!-- Switch styling -->
+        <item name="switchStyle">@style/NeptuneSwitch</item>
+    </style>
+
+    <!--
+        Theme untuk ModMenuOverlayService window
+        Transparan penuh agar Minecraft terlihat di baliknya
+    -->
+    <style name="Theme.NeptuneClient.Overlay" parent="Theme.NeptuneClient">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--
+        Style custom Switch toggle
+        Warna mengikuti palet Neptune
+    -->
+    <style name="NeptuneSwitch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="thumbTint">@color/switch_thumb_selector</item>
+        <item name="trackTint">@color/switch_track_selector</item>
+    </style>
+
+    <!--
+        Style untuk header kategori di mod menu
+    -->
+    <style name="Neptune.CategoryHeader">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/text_dim</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+    </style>
+
+    <!--
+        Style untuk nama fitur di setiap baris
+    -->
+    <style name="Neptune.FeatureLabel">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!--
+        Style untuk deskripsi fitur (teks kecil di bawah nama)
+    -->
+    <style name="Neptune.FeatureDesc">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_dim</item>
+    </style>
+
+    <!--
+        Style untuk tombol aksi di MainActivity
+    -->
+    <style name="Neptune.ActionButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/neptune_accent</item>
+        <item name="android:textColor">@color/bg_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+</resources>

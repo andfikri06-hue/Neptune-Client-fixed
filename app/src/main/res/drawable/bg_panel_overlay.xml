@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Neptune Client - bg_panel_overlay.xml
+    Background untuk mod menu panel overlay.
+
+    Desain:
+    - Warna dasar: navy gelap semi-transparan (#CC0D1525)
+    - Border: garis tipis biru muda transparan
+    - Corner radius: 12dp (rounded modern)
+    - Layer tambahan: gradient tipis di bagian atas (shimmer effect)
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Layer 1: Blur backdrop simulation (warna gelap opaque lebih) -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <solid android:color="#8A060C18" />
+        </shape>
+    </item>
+
+    <!-- Layer 2: Background utama (navy semi-transparan) -->
+    <item
+        android:top="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:bottom="1dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="11dp" />
+            <solid android:color="#E00D1525" />
+        </shape>
+    </item>
+
+    <!-- Layer 3: Shimmer gradient tipis di bagian atas -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#154FC3F7"
+                android:endColor="#000D1525" />
+        </shape>
+    </item>
+
+    <!-- Layer 4: Border outline biru tipis -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <stroke
+                android:width="1dp"
+                android:color="#404FC3F7" />
+            <solid android:color="#00000000" />
+        </shape>
+    </item>
+
+</layer-list>

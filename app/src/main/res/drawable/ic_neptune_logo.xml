@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Neptune Client - ic_neptune_logo.xml
+    Logo: hexagon biru dengan huruf "N" di tengah.
+    Digunakan sebagai:
+      - Toggle button (pojok layar saat Minecraft berjalan)
+      - Icon di header mod menu panel
+      - App launcher icon (via mipmap wrapper)
+-->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Glow / shadow layer (lingkaran biru transparan di belakang) -->
+    <path
+        android:pathData="M24,24m-22,0a22,22 0,1 1,44 0a22,22 0,1 1,-44 0"
+        android:fillColor="#184FC3F7"
+        android:strokeWidth="0" />
+
+    <!--
+        Hexagon utama
+        Titik hexagon regular dengan center (24,24) radius 20:
+        Top: (24, 4)
+        Top-right: (41.32, 14)
+        Bottom-right: (41.32, 34)
+        Bottom: (24, 44)
+        Bottom-left: (6.68, 34)
+        Top-left: (6.68, 14)
+    -->
+    <path
+        android:pathData="M24,4 L41.32,14 L41.32,34 L24,44 L6.68,34 L6.68,14 Z"
+        android:fillColor="#0D1525"
+        android:strokeColor="#4FC3F7"
+        android:strokeWidth="1.8" />
+
+    <!--
+        Border hexagon dalam (efek double border)
+    -->
+    <path
+        android:pathData="M24,8 L38.39,16.5 L38.39,33.5 L24,42 L9.61,33.5 L9.61,16.5 Z"
+        android:fillColor="#00000000"
+        android:strokeColor="#1A4FC3F7"
+        android:strokeWidth="0.8" />
+
+    <!--
+        Huruf "N" di tengah
+        Terdiri dari 3 garis: kiri vertikal, diagonal, kanan vertikal
+    -->
+
+    <!-- Garis kiri N -->
+    <path
+        android:pathData="M15,14 L15,34"
+        android:strokeColor="#4FC3F7"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+
+    <!-- Diagonal N (kiri-atas ke kanan-bawah) -->
+    <path
+        android:pathData="M15,14 L33,34"
+        android:strokeColor="#4FC3F7"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+
+    <!-- Garis kanan N -->
+    <path
+        android:pathData="M33,14 L33,34"
+        android:strokeColor="#4FC3F7"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+
+    <!-- Titik accent di sudut hexagon (atas kiri dan atas kanan) -->
+    <path
+        android:pathData="M24,4m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0"
+        android:fillColor="#81D4FA" />
+
+</vector>

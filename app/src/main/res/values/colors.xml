@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ── Background ──────────────────────────────── -->
+    <!-- Background utama app (gelap navy) -->
+    <color name="bg_dark">#0A0F1A</color>
+    <!-- Background panel overlay (semi-transparan) -->
+    <color name="bg_panel">#CC0D1525</color>
+    <!-- Background kategori header -->
+    <color name="bg_category">#1A2235</color>
+    <!-- Background baris fitur saat di-hover -->
+    <color name="bg_row_hover">#0FFFFFFF</color>
+
+    <!-- ── Accent / Brand ───────────────────────────── -->
+    <!-- Warna utama Neptune (biru cyan) -->
+    <color name="neptune_accent">#4FC3F7</color>
+    <!-- Accent lebih terang (highlight) -->
+    <color name="neptune_accent_light">#81D4FA</color>
+    <!-- Accent gelap (pressed state) -->
+    <color name="neptune_accent_dark">#0288D1</color>
+
+    <!-- ── Text ─────────────────────────────────────── -->
+    <!-- Teks utama (putih terang) -->
+    <color name="text_primary">#F1F5F9</color>
+    <!-- Teks sekunder (abu terang) -->
+    <color name="text_secondary">#94A3B8</color>
+    <!-- Teks redup (placeholder, label kecil) -->
+    <color name="text_dim">#475569</color>
+
+    <!-- ── UI Elements ──────────────────────────────── -->
+    <!-- Garis divider -->
+    <color name="divider">#1AFFFFFF</color>
+    <!-- Border panel -->
+    <color name="border_panel">#2AFFFFFF</color>
+
+    <!-- ── Durability Bar Colors ─────────────────────── -->
+    <!-- Hijau: 75–100% durabilitas -->
+    <color name="durability_high">#4CAF50</color>
+    <!-- Kuning: 50–74% -->
+    <color name="durability_medium">#FFEB3B</color>
+    <!-- Oranye: 25–49% -->
+    <color name="durability_low">#FF9800</color>
+    <!-- Merah: 0–24% (berkedip) -->
+    <color name="durability_critical">#F44336</color>
+    <!-- Background bar durabilitas -->
+    <color name="durability_bg">#44000000</color>
+
+    <!-- ── FPS Colors ───────────────────────────────── -->
+    <!-- FPS bagus (≥60) -->
+    <color name="fps_high">#00FF7F</color>
+    <!-- FPS sedang (30–59) -->
+    <color name="fps_medium">#FFD700</color>
+    <!-- FPS rendah (<30) -->
+    <color name="fps_low">#FF4444</color>
+
+    <!-- ── CPS Colors ───────────────────────────────── -->
+    <!-- Left click (biru muda) -->
+    <color name="cps_left">#87CEEB</color>
+    <!-- Right click (oranye) -->
+    <color name="cps_right">#FFB347</color>
+
+    <!-- ── Toggle Switch ────────────────────────────── -->
+    <!-- Track saat ON -->
+    <color name="switch_track_on">#804FC3F7</color>
+    <!-- Track saat OFF -->
+    <color name="switch_track_off">#40FFFFFF</color>
+    <!-- Thumb saat ON -->
+    <color name="switch_thumb_on">#4FC3F7</color>
+    <!-- Thumb saat OFF -->
+    <color name="switch_thumb_off">#94A3B8</color>
+
+    <!-- Material theme required colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Neptune Client</string>
+    <string name="tagline">Minecraft Bedrock Utility Client</string>
+
+    <!-- Buttons -->
+    <string name="btn_grant_permission">Grant Overlay Permission</string>
+    <string name="btn_open_minecraft">Buka Minecraft</string>
+    <string name="btn_close">Tutup</string>
+    <string name="btn_manage_shortcuts">Manage Shortcuts</string>
+
+    <!-- Permission dialog -->
+    <string name="dialog_overlay_title">Izin Overlay Diperlukan</string>
+    <string name="dialog_overlay_message">Neptune Client perlu izin \"Display over other apps\" agar bisa menampilkan HUD dan Mod Menu di atas Minecraft.\n\nTap OK lalu aktifkan toggle untuk Neptune Client.</string>
+    <string name="dialog_ready_title">Neptune Client Aktif ✓</string>
+    <string name="dialog_ready_message">Overlay service sudah berjalan.\n\nBuka Minecraft Bedrock, lalu tap ikon Neptune di pojok layar untuk membuka Mod Menu.</string>
+    <string name="btn_open_settings">Buka Pengaturan</string>
+
+    <!-- Feature names -->
+    <string name="feature_fps_display">FPS Display</string>
+    <string name="feature_cps_display">CPS Display</string>
+    <string name="feature_zoom">Zoom</string>
+    <string name="feature_fullbright">Fullbright</string>
+    <string name="feature_freecam">Freecam</string>
+    <string name="feature_freelook">Freelook (360°)</string>
+    <string name="feature_compass">Compass Bar</string>
+    <string name="feature_durability">Durability Viewer</string>
+    <string name="feature_toggle_sprint">Toggle Sprint</string>
+    <string name="feature_keystrokes">Keystrokes Display</string>
+
+    <!-- Feature descriptions -->
+    <string name="desc_fps_display">Tampilkan Frames Per Second di layar</string>
+    <string name="desc_cps_display">Tampilkan Click Per Second (Left &amp; Right)</string>
+    <string name="desc_zoom">Perbesar pandangan dengan memperkecil FOV</string>
+    <string name="desc_fullbright">Pencahayaan maksimum tanpa torch</string>
+    <string name="desc_freecam">Kamera bisa bergerak bebas dari karakter</string>
+    <string name="desc_freelook">Lihat sekeliling tanpa mengubah arah jalan</string>
+    <string name="desc_compass">Kompas digital di bagian atas layar</string>
+    <string name="desc_durability">Bar durabilitas armor di atas EXP bar</string>
+    <string name="desc_toggle_sprint">Sekali ketuk untuk sprint terus-menerus</string>
+    <string name="desc_keystrokes">Visualisasi tombol gerakan (W/A/S/D)</string>
+
+    <!-- Category names -->
+    <string name="category_performance">PERFORMANCE</string>
+    <string name="category_combat">COMBAT</string>
+    <string name="category_visual">VISUAL</string>
+    <string name="category_utilities">UTILITIES</string>
+
+    <!-- Service notification -->
+    <string name="notif_channel_name">Neptune Client Service</string>
+    <string name="notif_channel_desc">Digunakan untuk menjalankan overlay HUD di background</string>
+    <string name="notif_title">Neptune Client aktif</string>
+    <string name="notif_text">Tap ikon Neptune di layar Minecraft untuk membuka menu</string>
+
+    <!-- Errors -->
+    <string name="error_minecraft_not_found">Minecraft tidak ditemukan di perangkat ini</string>
+    <string name="error_overlay_required">Overlay permission diperlukan!</string>
+    <string name="error_notif_required">Notifikasi diperlukan untuk menjalankan service overlay</string>
+</resources>
