@@ -23,10 +23,23 @@ jobs:
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
     
-    - name: Accept licenses & install NDK
+    - name: Accept all licenses
       run: |
         yes | sdkmanager --licenses || true
-        sdkmanager "ndk;25.1.8937393" "cmake;3.22.1"
+        yes | sdkmanager "ndk;25.1.8937393" "cmake;3.22.1" || true
+        mkdir -p $ANDROID_SDK_ROOT/licenses
+        echo "24333f8a63b6825ea9c5514f83c2829b004d1fee" > $ANDROID_SDK_ROOT/licenses/android-sdk-license
+        echo "84831b9409646a918e30573bab4c9c91346d8abd" > $ANDROID_SDK_ROOT/licenses/android-sdk-preview-license
+        echo "79120722343a6f314e0719f863036c702b0e6b2a" > $ANDROID_SDK_ROOT/licenses/android-googletv-license
+        echo "d975f751698a77b662f1254ddbeed3901e976f5a" > $ANDROID_SDK_ROOT/licenses/intel-android-extra-license
+        echo "e9acab5b5fbb560a72cfaecce8946896ff6aab9d" > $ANDROID_SDK_ROOT/licenses/mips-android-sysimage-license
+        echo "33b6a2b64607f11b759f320ef9dff4ae5c47d97a" > $ANDROID_SDK_ROOT/licenses/google-gdk-license
+        echo "8933bad161af4178b1185d1a37fbf41ea5269c55" >> $ANDROID_SDK_ROOT/licenses/android-sdk-license
+        echo "d56f5187479451eabf01fb78af6dfcb131a6481e" >> $ANDROID_SDK_ROOT/licenses/android-sdk-license
+    
+    - name: Update Gradle wrapper to 8.6
+      run: |
+        sed -i 's|distributionUrl=.*|distributionUrl=https\\://services.gradle.org/distributions/gradle-8.6-bin.zip|' gradle/wrapper/gradle-wrapper.properties
     
     - name: Build Debug APK
       run: ./gradlew assembleDebug
